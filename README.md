@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sauce Demo: Shop and Check Out (manual + automated tests)
 
 Test suite for the use case *"As a registered customer, I want to log in, browse and sort products, add them to my cart and check out, so that I can place an order."* against the public practice site https://www.saucedemo.com.
@@ -108,3 +109,7 @@ TC08/TC09 and TC15 to TC17 are each generated from one data table in the spec, s
 ## How the suite would grow to 200 tests
 
 I would keep one page object per page and move shared flows (log in, add items, reach checkout) into fixtures, so new tests stay short. Tests would be tagged (`@smoke`, `@regression`) and split into files by area (login, inventory, cart, checkout, security). Test data would live in JSON files or factory functions, not inside the tests. Playwright already runs files in parallel; in CI I would run the smoke tag on every commit, the full regression nightly, and shard it across machines with `--shard`. I would add more browsers as Playwright projects, publish the HTML and JUnit reports from the pipeline, and track flaky tests, fixing or quarantining them quickly. Anything about prices or tax rules would move to API or unit tests, so the UI suite stays small and fast.
+=======
+# saucedemo-tests
+.gitignore
+>>>>>>> 9e9772f158e47214752591b61a303e2eb245809b
