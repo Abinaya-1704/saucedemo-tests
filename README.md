@@ -1,1 +1,2 @@
 # saucedemo-tests
+.gitignore
